@@ -20,6 +20,7 @@ end
 
 group :test do
   gem 'simplecov', require: false
+  gem 'faker'
 end
 
 group :development do

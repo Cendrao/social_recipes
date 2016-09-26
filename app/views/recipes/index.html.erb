@@ -1,0 +1,11 @@
+ <div class="row">
+     <div class="col-xs-12">
+         <ul class="list-unstyled">
+             <% @recipes.each do |recipe| %>
+                 <li>
+                     <%= link_to recipe.title, recipe %>
+                 </li>
+             <% end %>
+         </ul>
+     </div>
+ </div>
