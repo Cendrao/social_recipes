@@ -16,11 +16,11 @@ group :development, :test do
   gem 'capybara'
   gem 'factory_girl_rails'
   gem 'pry-byebug'
+  gem 'faker'
 end
 
 group :test do
   gem 'simplecov', require: false
-  gem 'faker'
 end
 
 group :development do
