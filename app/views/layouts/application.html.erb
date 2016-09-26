@@ -34,6 +34,15 @@
           </ul>
       </div>
     </nav>
-    <%= yield %>
+    <div id="root" class="container">
+      
+      <% if flash[:error] %>
+        <div class="alert alert-danger">
+          <p><%= flash[:error] %></p>
+        </div>
+      <% end %>
+      
+        <%= yield %>
+    </div>
   </body>
 </html>
